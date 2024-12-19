@@ -10,7 +10,7 @@ func helloHandler(w http.ResponseWriter, r *http.Request) {
 	if r.Method == http.MethodGet {
 		w.WriteHeader(http.StatusOK)
 		w.Header().Set("Content-Type", "application/json")
-		fmt.Fprint(w, `{"message": "Hello, World!" first change. second change. third change. forth change.}`)
+		fmt.Fprint(w, `{"message": "Hello, World!" first change. second change. third change. forth change. fifth change}`)
 	} else {
 		w.WriteHeader(http.StatusMethodNotAllowed)
 		fmt.Fprint(w, "Method not allowed")
